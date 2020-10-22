@@ -1,0 +1,30 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		Console.WriteLine("Введите первое число последовательности");
+            int k = Convert.ToInt32(Console.ReadLine());
+
+            for (int i = 1; i < 9; i++)
+            {
+                Console.WriteLine("Введите следующее число последовательности");
+                int n = Convert.ToInt32(Console.ReadLine());
+                bool f = true;
+                if (k > n)
+                {
+                    f = false;
+                }
+                if (f)
+                {
+                    k = n;
+                    Console.WriteLine("Возрастающая");
+                }
+                else
+                {
+                    Console.WriteLine("Не возрастающая");
+                }
+            }
+	}
+}
