@@ -1,0 +1,26 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		//Даны  натуральные  числа n,   m.  Получить  все меньшие n натуральные  числа,  квадрат  суммы цифр которых равен m. 
+		 
+         int m, n,s = 0,b; 
+            Console.WriteLine("Вв.натуральное число n= ");
+            n = int.Parse(Console.ReadLine());
+ 
+            Console.WriteLine("Вв.натуральное число  m= ");
+            m = int.Parse(Console.ReadLine());
+            b = n;
+            for (int i = 1; i <= n; i++)
+            
+                if(i*i<n && i*i==m)
+            
+            Console.WriteLine(i);
+		
+		
+		
+	}
+}
+

@@ -1,0 +1,22 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		//Найти сумму целых положительных чисел из промежутка от А до В, кратных 4 (значения с переменных А и В вводятся с клавиатуры)
+	//int s,i;
+		double a,b, s , i;
+		Console.WriteLine("Пожалуйста,введите число А:");	
+		a=Convert.ToDouble(Console.ReadLine());
+			Console.WriteLine("Пожалуйста, введите число В");
+		b=Convert.ToDouble(Console.ReadLine());
+          s=0;
+		for(i = a;i<=b;i++)
+		{
+			if(i%4==0)
+				s+=i;
+		}
+       Console.WriteLine( s);
+	}
+}
